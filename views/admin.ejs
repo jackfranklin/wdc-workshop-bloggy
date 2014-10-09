@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Admin</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h2>Blog Admin</h2>
+    <% errors.forEach(function(error) { %>
+      <p><%= error %></p>
+    <% }); %>
+
+    <form action="/admin/new?name=jack" method="post">
+      <label>Title</label><br>
+      <input type="text" name="title"><br>
+      <label>Content</label><br>
+      <textarea name="content"></textarea><br>
+      <input type="submit" />
+    </form>
+  </body>
+</html>
